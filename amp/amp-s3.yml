@@ -4385,7 +4385,7 @@ parameters:
 - description: AMP release tag.
   name: AMP_RELEASE
   required: true
-  value: "2.6"
+  value: 2.7
 - description: Used for object app labels
   name: APP_LABEL
   required: true
@@ -4397,16 +4397,17 @@ parameters:
   value: 3scale
 - name: AMP_BACKEND_IMAGE
   required: true
-  value: registry.redhat.io/3scale-amp26/backend
+  value: docker-registry.default.svc:5000/openshift/3scale-amp2-backend-rhel7:1.10-24
 - name: AMP_ZYNC_IMAGE
   required: true
-  value: registry.redhat.io/3scale-amp26/zync
+  value: docker-registry.default.svc:5000/openshift/3scale-amp2-zync-rhel7:1.10-23
 - name: AMP_APICAST_IMAGE
   required: true
-  value: registry.redhat.io/3scale-amp26/apicast-gateway
+  value: docker-registry.default.svc:5000/openshift/3scale-amp2-apicast-gateway-rhel7:1.16-36
 - name: AMP_SYSTEM_IMAGE
   required: true
   value: registry.redhat.io/3scale-amp26/system
+  valye: docker-registry.default.svc:5000/openshift/3scale-amp2-system-rhel7:1.11-23
 - description: Zync's PostgreSQL image to use
   name: ZYNC_DATABASE_IMAGE
   required: true
